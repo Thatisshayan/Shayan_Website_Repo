@@ -2,18 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell, PageHeader } from "@/components/site/SiteShell";
 import { CTASection } from "@/components/site/CTASection";
 import { SITE } from "@/data/projects";
+import { buildSeoHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: `About — ${SITE.brand}` },
-      { name: "description", content: "Founder-led venture ecosystem combining AI infrastructure, product ventures, media brands, and service operations." },
-      { property: "og:title", content: `About — ${SITE.brand}` },
-      { property: "og:description", content: "Founder-led venture ecosystem from Toronto, Ontario." },
-      { property: "og:url", content: "/about" },
-    ],
-    links: [{ rel: "canonical", href: "/about" }],
-  }),
+  head: () =>
+    buildSeoHead({
+      title: `About - ${SITE.brand}`,
+      description:
+        "Founder-led venture ecosystem combining AI infrastructure, product ventures, media brands, and service operations.",
+      pathname: "/about",
+    }),
   component: AboutPage,
 });
 
@@ -23,31 +21,29 @@ function AboutPage() {
       <PageHeader
         eyebrow="About"
         title="A venture ecosystem built for execution."
-        description={`${SITE.brand} is the public hub for ${SITE.owner}'s work — AI operating systems, product ventures, media and creative brands, service businesses, and active opportunity research.`}
+        description={`${SITE.brand} is the public hub for ${SITE.owner}'s work - AI operating systems, product ventures, media and creative brands, service businesses, and active opportunity research.`}
       />
 
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="prose-style space-y-6 text-base leading-relaxed text-foreground/85">
           <p>
-            The ecosystem exists because most operators are forced to choose between
-            depth and breadth. We don't. Each project here is treated as its own
-            business with its own positioning, audience, and craft — and each one
-            connects back to the same underlying execution layer.
+            The ecosystem exists because most operators are forced to choose between depth and
+            breadth. We do not. Each project here is treated as its own business with its own
+            positioning, audience, and craft - and each one connects back to the same underlying
+            execution layer.
           </p>
           <p>
-            On the AI side, the work focuses on building governed operating systems
-            (ACC, Alphonso, Founder Project) where goals, agents, approvals, memory,
-            and execution history live in one place. On the product side, ventures
-            like SessionGuard and TapCash explore behavior analytics and reward
-            economics. On the operating side, brands like Obsidian Media, Obsidian
-            Studios, Blazely, and Cullinan Construction deliver real outcomes for
-            real clients.
+            On the AI side, the work focuses on building governed operating systems (ACC, Alphonso,
+            Founder Project) where goals, agents, approvals, memory, and execution history live in
+            one place. On the product side, ventures like SessionGuard and TapCash explore behavior
+            analytics and reward economics. On the operating side, brands like Obsidian Media,
+            Obsidian Studios, Blazely, and Cullinan Construction deliver real outcomes for real
+            clients.
           </p>
           <p>
-            The thesis is simple: the next generation of valuable companies will be
-            led by operators who can think across infrastructure, product, brand,
-            and execution in one continuous loop. This site is the public face of
-            that loop.
+            The thesis is simple: the next generation of valuable companies will be led by operators
+            who can think across infrastructure, product, brand, and execution in one continuous
+            loop. This site is the public face of that loop.
           </p>
         </div>
 
@@ -62,7 +58,7 @@ function AboutPage() {
           </div>
           <div>
             <dt className="text-xs uppercase tracking-wider text-muted-foreground">Focus</dt>
-            <dd className="mt-1 font-display text-base">AI · Ventures · Media · Ops</dd>
+            <dd className="mt-1 font-display text-base">AI - Ventures - Media - Ops</dd>
           </div>
         </dl>
       </div>

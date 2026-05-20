@@ -21,9 +21,7 @@ export function Header() {
           <span className="relative grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-primary via-accent to-gold text-[11px] font-bold text-background shadow-glow">
             SVE
           </span>
-          <span className="font-display text-sm font-semibold tracking-tight">
-            {SITE.brand}
-          </span>
+          <span className="font-display text-sm font-semibold tracking-tight">{SITE.brand}</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
@@ -50,7 +48,9 @@ export function Header() {
         </div>
 
         <button
-          aria-label="Toggle menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="mobile-primary-nav"
           className="rounded-md p-2 md:hidden"
           onClick={() => setOpen((v) => !v)}
         >
@@ -60,7 +60,10 @@ export function Header() {
 
       {open && (
         <div className="border-t border-border/40 md:hidden">
-          <nav className="mx-auto flex max-w-7xl flex-col px-4 py-3 sm:px-6">
+          <nav
+            id="mobile-primary-nav"
+            className="mx-auto flex max-w-7xl flex-col px-4 py-3 sm:px-6"
+          >
             {nav.map((n) => (
               <Link
                 key={n.to}

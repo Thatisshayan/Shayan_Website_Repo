@@ -2,18 +2,17 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Bot, Workflow, LineChart, Megaphone, Film, Rocket, Hammer } from "lucide-react";
 import { SiteShell, PageHeader } from "@/components/site/SiteShell";
 import { CTASection } from "@/components/site/CTASection";
+import { SITE } from "@/data/projects";
+import { buildSeoHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/services")({
-  head: () => ({
-    meta: [
-      { title: "Services — Shayan Venture Ecosystem" },
-      { name: "description", content: "AI system design, automation, media operations, creative production, marketing, and construction services." },
-      { property: "og:title", content: "Services — Shayan Venture Ecosystem" },
-      { property: "og:description", content: "Capabilities offered across the ecosystem." },
-      { property: "og:url", content: "/services" },
-    ],
-    links: [{ rel: "canonical", href: "/services" }],
-  }),
+  head: () =>
+    buildSeoHead({
+      title: `Services - ${SITE.brand}`,
+      description:
+        "AI system design, automation, media operations, creative production, marketing, and construction services.",
+      pathname: "/services",
+    }),
   component: ServicesPage,
 });
 
@@ -26,16 +25,16 @@ const services = [
   {
     icon: Workflow,
     title: "Workflow Automation",
-    body: "End-to-end workflow design: ingestion, decisioning, tool routing, and audit trails — across teams and tools.",
+    body: "End-to-end workflow design: ingestion, decisioning, tool routing, and audit trails across teams and tools.",
   },
   {
     icon: LineChart,
-    title: "Behavior & Session Analytics",
+    title: "Behavior and Session Analytics",
     body: "Custom analytics pipelines, dashboards, and reports for behavior, decisions, and performance patterns.",
   },
   {
     icon: Megaphone,
-    title: "Content & Media Strategy",
+    title: "Content and Media Strategy",
     body: "Editorial systems, content calendars, repurposing engines, and brand storytelling at production scale.",
   },
   {
@@ -45,12 +44,12 @@ const services = [
   },
   {
     icon: Rocket,
-    title: "Launch & Growth Systems",
+    title: "Launch and Growth Systems",
     body: "Landing pages, lead capture, CRM setup, performance reporting, and campaign automation.",
   },
   {
     icon: Hammer,
-    title: "Construction & Project Execution",
+    title: "Construction and Project Execution",
     body: "Renovations, custom builds, landscaping, and project coordination across Ontario.",
   },
 ];
@@ -61,7 +60,7 @@ function ServicesPage() {
       <PageHeader
         eyebrow="Capabilities"
         title="Services"
-        description="The execution layers offered across the ecosystem — from AI infrastructure to creative production and field operations."
+        description="The execution layers offered across the ecosystem - from AI infrastructure to creative production and field operations."
       />
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

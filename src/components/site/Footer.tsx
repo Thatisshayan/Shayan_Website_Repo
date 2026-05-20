@@ -4,6 +4,7 @@ import { SITE, getProjectsBySlugs, PRODUCT_SLUGS, BUSINESS_SLUGS } from "@/data/
 export function Footer() {
   const products = getProjectsBySlugs(PRODUCT_SLUGS);
   const businesses = getProjectsBySlugs(BUSINESS_SLUGS);
+
   return (
     <footer className="mt-32 border-t border-border/50 bg-background/60">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
@@ -18,9 +19,7 @@ export function Footer() {
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
               {SITE.tagline}
             </p>
-            <p className="mt-6 text-xs text-muted-foreground">
-              {SITE.location}
-            </p>
+            <p className="mt-6 text-xs text-muted-foreground">{SITE.location}</p>
           </div>
 
           <div className="md:col-span-2">
@@ -28,10 +27,26 @@ export function Footer() {
               Ecosystem
             </h4>
             <ul className="mt-4 space-y-2.5 text-sm">
-              <li><Link to="/projects" className="text-foreground/80 hover:text-foreground">Projects</Link></li>
-              <li><Link to="/businesses" className="text-foreground/80 hover:text-foreground">Businesses</Link></li>
-              <li><Link to="/services" className="text-foreground/80 hover:text-foreground">Services</Link></li>
-              <li><Link to="/about" className="text-foreground/80 hover:text-foreground">About</Link></li>
+              <li>
+                <Link to="/projects" className="text-foreground/80 hover:text-foreground">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/businesses" className="text-foreground/80 hover:text-foreground">
+                  Businesses
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="text-foreground/80 hover:text-foreground">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-foreground/80 hover:text-foreground">
+                  About
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -43,8 +58,8 @@ export function Footer() {
               {products.map((p) => (
                 <li key={p.slug}>
                   <Link
-                    to={"/$slug" as any}
-                    params={{ slug: p.slug } as any}
+                    to="/$slug"
+                    params={{ slug: p.slug }}
                     className="text-foreground/80 hover:text-foreground"
                   >
                     {p.title}
@@ -62,8 +77,8 @@ export function Footer() {
               {businesses.map((p) => (
                 <li key={p.slug}>
                   <Link
-                    to={"/$slug" as any}
-                    params={{ slug: p.slug } as any}
+                    to="/$slug"
+                    params={{ slug: p.slug }}
                     className="text-foreground/80 hover:text-foreground"
                   >
                     {p.title}
@@ -72,14 +87,86 @@ export function Footer() {
               ))}
             </ul>
           </div>
+
+          <div className="md:col-span-3">
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              Connect
+            </h4>
+            <ul className="mt-4 space-y-2.5 text-sm">
+              <li>
+                <a
+                  href={`mailto:${SITE.email}`}
+                  className="text-foreground/80 hover:text-foreground"
+                >
+                  {SITE.email}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`tel:${SITE.phone.replace(/[^+\d]/g, "")}`}
+                  className="text-foreground/80 hover:text-foreground"
+                >
+                  {SITE.phone}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SITE.social.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-foreground/80 hover:text-foreground"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SITE.social.x}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-foreground/80 hover:text-foreground"
+                >
+                  X / Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SITE.social.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-foreground/80 hover:text-foreground"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SITE.social.youtube}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-foreground/80 hover:text-foreground"
+                >
+                  YouTube
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-border/50 pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} {SITE.brand}. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} {SITE.brand}. All rights reserved.
+          </p>
           <div className="flex gap-5">
-            <Link to="/privacy" className="hover:text-foreground">Privacy</Link>
-            <Link to="/terms" className="hover:text-foreground">Terms</Link>
-            <Link to="/contact" className="hover:text-foreground">Contact</Link>
+            <Link to="/privacy" className="hover:text-foreground">
+              Privacy
+            </Link>
+            <Link to="/terms" className="hover:text-foreground">
+              Terms
+            </Link>
+            <Link to="/contact" className="hover:text-foreground">
+              Contact
+            </Link>
           </div>
         </div>
       </div>

@@ -10,17 +10,17 @@ import {
 
 import appCss from "../styles.css?url";
 import { SITE } from "@/data/projects";
+import { buildSeoHead, organizationSchema, websiteSchema } from "@/lib/seo";
+import { SeoJsonLd } from "@/components/site/SeoJsonLd";
 
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="font-display text-7xl font-semibold text-gradient">404</h1>
-        <h2 className="mt-4 font-display text-xl font-semibold text-foreground">
-          Page not found
-        </h2>
+        <h2 className="mt-4 font-display text-xl font-semibold text-foreground">Page not found</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
+          The page you&apos;re looking for doesn&apos;t exist or has been moved.
         </p>
         <div className="mt-6">
           <Link
@@ -43,7 +43,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="font-display text-xl font-semibold tracking-tight text-foreground">
-          This page didn't load
+          This page didn&apos;t load
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
           Something went wrong on our end. You can try again or head home.
@@ -71,38 +71,36 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: `${SITE.brand} — AI products, ventures & operating systems` },
-      { name: "description", content: SITE.tagline },
-      { name: "author", content: SITE.owner },
-      { property: "og:site_name", content: SITE.brand },
-      { property: "og:type", content: "website" },
-      { property: "og:title", content: SITE.brand },
-      { property: "og:description", content: SITE.tagline },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "theme-color", content: "#0b0b16" },
-      { title: "Lovable App" },
-      { property: "og:title", content: "Lovable App" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "description", content: "Founders' Portfolio Hub is a modern, multi-page website showcasing a founder's diverse projects and businesses." },
-      { property: "og:description", content: "Founders' Portfolio Hub is a modern, multi-page website showcasing a founder's diverse projects and businesses." },
-      { name: "twitter:description", content: "Founders' Portfolio Hub is a modern, multi-page website showcasing a founder's diverse projects and businesses." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/41042581-7771-4383-9809-0adb733e303c/id-preview-471a3e62--22f96194-2b78-4523-8836-10dd704068b3.lovable.app-1779238462244.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/41042581-7771-4383-9809-0adb733e303c/id-preview-471a3e62--22f96194-2b78-4523-8836-10dd704068b3.lovable.app-1779238462244.png" },
-    ],
-    links: [
-      { rel: "stylesheet", href: appCss },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap",
-      },
-    ],
-  }),
+  head: () => {
+    const seo = buildSeoHead({
+      title: `${SITE.brand} - founder-led AI products and service brands`,
+      description: SITE.tagline,
+      pathname: "/",
+    });
+
+    return {
+      meta: [
+        { charSet: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "author", content: SITE.owner },
+        { name: "twitter:site", content: SITE.social.xHandle },
+        { name: "twitter:creator", content: SITE.social.xHandle },
+        ...(seo.meta ?? []),
+      ],
+      links: [
+        { rel: "stylesheet", href: appCss },
+        { rel: "icon", href: "/favicon.ico" },
+        { rel: "apple-touch-icon", href: "/favicon.ico" },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap",
+        },
+        ...(seo.links ?? []),
+      ],
+    };
+  },
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
@@ -114,8 +112,16 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang="en" className="dark">
       <head>
         <HeadContent />
+        <SeoJsonLd data={organizationSchema()} />
+        <SeoJsonLd data={websiteSchema()} />
       </head>
       <body>
+        <a
+          href="#main-content"
+          className="sr-only rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background focus:not-sr-only focus:absolute focus:left-4 focus:top-4"
+        >
+          Skip to content
+        </a>
         {children}
         <Scripts />
       </body>

@@ -2,9 +2,9 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 
 export function CTASection({
-  title = "Ready to build the next thing?",
-  body = "Whether you need an AI system, a launch, or strategic execution — let's talk.",
-  primary = { to: "/contact", label: "Book a call" },
+  title = "Ready to discuss a real build?",
+  body = "If you need a product, service, or operating system with clear scope, let's talk.",
+  primary = { to: "/contact", label: "Start a conversation" },
   secondary,
 }: {
   title?: string;

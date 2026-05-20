@@ -2,19 +2,17 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteShell, PageHeader } from "@/components/site/SiteShell";
 import { ProjectCard } from "@/components/site/ProjectCard";
 import { CTASection } from "@/components/site/CTASection";
-import { getProjectsBySlugs, BUSINESS_SLUGS } from "@/data/projects";
+import { getProjectsBySlugs, BUSINESS_SLUGS, SITE } from "@/data/projects";
+import { buildSeoHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/businesses")({
-  head: () => ({
-    meta: [
-      { title: "Businesses — Shayan Venture Ecosystem" },
-      { name: "description", content: "Operating service brands across media, creative production, marketing automation, and construction." },
-      { property: "og:title", content: "Businesses — Shayan Venture Ecosystem" },
-      { property: "og:description", content: "Operating service brands across media, creative, marketing, and construction." },
-      { property: "og:url", content: "/businesses" },
-    ],
-    links: [{ rel: "canonical", href: "/businesses" }],
-  }),
+  head: () =>
+    buildSeoHead({
+      title: `Businesses - ${SITE.brand}`,
+      description:
+        "Operating service brands across media, creative production, marketing automation, and construction.",
+      pathname: "/businesses",
+    }),
   component: BusinessesPage,
 });
 
@@ -25,7 +23,7 @@ function BusinessesPage() {
       <PageHeader
         eyebrow="Operating brands"
         title="Businesses"
-        description="Service brands and venture operations — each runs as its own business with its own positioning, audience, and offer."
+        description="Service brands and venture operations - each runs as its own business with its own positioning, audience, and offer."
       />
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-2">

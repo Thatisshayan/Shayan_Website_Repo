@@ -11,28 +11,45 @@ import {
   BUSINESS_SLUGS,
   OPPORTUNITY_SLUGS,
 } from "@/data/projects";
+import { buildSeoHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: `${SITE.brand} — AI products, ventures & operating systems` },
-      { name: "description", content: SITE.tagline },
-      { property: "og:title", content: SITE.brand },
-      { property: "og:description", content: SITE.tagline },
-      { property: "og:url", content: "/" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
+  head: () =>
+    buildSeoHead({
+      title: `${SITE.brand} - founder-led AI products and service brands`,
+      description: SITE.tagline,
+      pathname: "/",
+    }),
   component: HomePage,
 });
 
 const pillars = [
-  { icon: Cpu, label: "AI Operating Systems", text: "ACC, Alphonso, Founder Project — execution-grade AI infrastructure." },
-  { icon: Sparkles, label: "Product Ventures", text: "SessionGuard, TapCash — data, behavior, and rewards platforms." },
-  { icon: Megaphone, label: "Media & Marketing", text: "Obsidian Media, Obsidian Studios, Blazely — content & growth systems." },
-  { icon: Hammer, label: "Service Operations", text: "Cullinan Construction — premium execution for real-world builds." },
-  { icon: Compass, label: "Opportunity Research", text: "AI Tourist Assistant, UniUni DSP — evaluating the next move." },
-];
+  {
+    icon: Cpu,
+    label: "AI Operating Systems",
+    text: "ACC, Alphonso, and Founder Project are the ecosystem's execution layer.",
+  },
+  {
+    icon: Sparkles,
+    label: "Product Ventures",
+    text: "SessionGuard and TapCash cover behavior analytics and rewards infrastructure.",
+  },
+  {
+    icon: Megaphone,
+    label: "Media and Marketing",
+    text: "Obsidian Media, Obsidian Studios, and Blazely support content and growth work.",
+  },
+  {
+    icon: Hammer,
+    label: "Service Operations",
+    text: "Cullinan Construction is the operating service brand for real-world projects.",
+  },
+  {
+    icon: Compass,
+    label: "Opportunity Research",
+    text: "AI Tourist Assistant and UniUni DSP remain active research tracks.",
+  },
+] as const;
 
 function HomePage() {
   const products = getProjectsBySlugs(PRODUCT_SLUGS);
@@ -41,25 +58,22 @@ function HomePage() {
 
   return (
     <SiteShell>
-      {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 hero-grad" aria-hidden />
         <div className="absolute inset-0 grid-pattern" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-20 sm:px-6 lg:px-8 lg:pb-32 lg:pt-28">
           <div className="ring-grad inline-flex items-center gap-2 rounded-full bg-foreground/5 px-3 py-1 text-xs text-muted-foreground">
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-gold" />
-            Founder-led venture ecosystem · {SITE.location}
+            Founder-led venture ecosystem - {SITE.location}
           </div>
 
           <h1 className="mt-6 max-w-4xl font-display text-5xl font-semibold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-            <span className="text-gradient">
-              A complete ecosystem of AI products, ventures and operating systems.
-            </span>
+            <span className="text-gradient">{SITE.tagline}</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            {SITE.brand} is the public hub for {SITE.owner}'s AI infrastructure,
-            product ventures, media brands, service businesses, and opportunity research —
-            each with its own dedicated page, positioning, and call to action.
+            {SITE.brand} is the public hub for {SITE.owner}'s product work, service brands, and
+            opportunity research. Each initiative has its own page with a clear stage, audience, and
+            next action.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
@@ -78,7 +92,6 @@ function HomePage() {
             </Link>
           </div>
 
-          {/* Stats */}
           <div className="mt-16 grid grid-cols-2 gap-6 sm:grid-cols-4">
             {[
               { k: projects.length.toString(), v: "Dedicated pages" },
@@ -95,7 +108,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Pillars */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between gap-6">
           <div>
@@ -118,7 +130,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Products */}
       <Section
         eyebrow="AI Products"
         title="Operating systems and platforms"
@@ -126,18 +137,16 @@ function HomePage() {
         viewAll="/projects"
       />
 
-      {/* Businesses */}
       <Section
         eyebrow="Businesses"
-        title="Service brands & venture operations"
+        title="Service brands and operating businesses"
         items={businesses}
         viewAll="/businesses"
       />
 
-      {/* Opportunities */}
       <Section
         eyebrow="Opportunities"
-        title="Active research & evaluation"
+        title="Research and evaluation"
         items={opportunities}
         viewAll="/projects"
       />

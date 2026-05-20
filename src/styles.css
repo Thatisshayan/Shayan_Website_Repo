@@ -51,7 +51,7 @@
   --popover: oklch(0.21 0.025 265);
   --popover-foreground: oklch(0.97 0.005 250);
 
-  --primary: oklch(0.68 0.18 265);     /* electric indigo */
+  --primary: oklch(0.68 0.18 265); /* electric indigo */
   --primary-foreground: oklch(0.98 0.005 250);
 
   --secondary: oklch(0.28 0.04 280);
@@ -60,10 +60,10 @@
   --muted: oklch(0.26 0.025 265);
   --muted-foreground: oklch(0.72 0.02 260);
 
-  --accent: oklch(0.62 0.22 295);      /* purple */
+  --accent: oklch(0.62 0.22 295); /* purple */
   --accent-foreground: oklch(0.98 0.005 250);
 
-  --gold: oklch(0.82 0.13 85);         /* warm gold */
+  --gold: oklch(0.82 0.13 85); /* warm gold */
   --gold-foreground: oklch(0.18 0.02 265);
 
   --destructive: oklch(0.62 0.22 25);
@@ -73,19 +73,40 @@
   --input: oklch(1 0 0 / 12%);
   --ring: oklch(0.68 0.18 265);
 
-  --grad-hero: radial-gradient(ellipse 80% 60% at 50% 0%, oklch(0.35 0.18 280 / 0.55), transparent 70%),
-               radial-gradient(ellipse 60% 50% at 90% 30%, oklch(0.45 0.18 230 / 0.35), transparent 70%),
-               radial-gradient(ellipse 50% 40% at 10% 70%, oklch(0.4 0.18 300 / 0.3), transparent 70%);
-  --grad-text: linear-gradient(135deg, oklch(0.95 0.02 260), oklch(0.8 0.15 280) 50%, oklch(0.82 0.13 85));
-  --grad-border: linear-gradient(135deg, oklch(0.68 0.18 265 / 0.5), oklch(0.62 0.22 295 / 0.2), oklch(0.82 0.13 85 / 0.3));
+  --grad-hero:
+    radial-gradient(ellipse 80% 60% at 50% 0%, oklch(0.35 0.18 280 / 0.55), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 90% 30%, oklch(0.45 0.18 230 / 0.35), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 10% 70%, oklch(0.4 0.18 300 / 0.3), transparent 70%);
+  --grad-text: linear-gradient(
+    135deg,
+    oklch(0.95 0.02 260),
+    oklch(0.8 0.15 280) 50%,
+    oklch(0.82 0.13 85)
+  );
+  --grad-border: linear-gradient(
+    135deg,
+    oklch(0.68 0.18 265 / 0.5),
+    oklch(0.62 0.22 295 / 0.2),
+    oklch(0.82 0.13 85 / 0.3)
+  );
   --shadow-glow: 0 0 0 1px oklch(1 0 0 / 0.04), 0 30px 80px -20px oklch(0.4 0.18 280 / 0.4);
 }
 
-.dark { color-scheme: dark; }
+.dark {
+  color-scheme: dark;
+}
 
 @layer base {
-  * { border-color: var(--color-border); }
-  html { scroll-behavior: smooth; }
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  :where(a, button, input, textarea, select, summary):focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -97,7 +118,13 @@
       radial-gradient(circle at 0% 100%, oklch(0.25 0.1 230 / 0.25), transparent 50%);
     background-attachment: fixed;
   }
-  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
 }
 
 @layer utilities {
@@ -117,19 +144,24 @@
     background-clip: text;
     color: transparent;
   }
-  .hero-grad { background-image: var(--grad-hero); }
+  .hero-grad {
+    background-image: var(--grad-hero);
+  }
   .ring-grad {
     position: relative;
   }
   .ring-grad::before {
     content: "";
-    position: absolute; inset: 0;
+    position: absolute;
+    inset: 0;
     border-radius: inherit;
     padding: 1px;
     background: var(--grad-border);
-    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
-            mask-composite: exclude;
+    mask-composite: exclude;
     pointer-events: none;
   }
   .grid-pattern {
@@ -138,5 +170,16 @@
       linear-gradient(90deg, oklch(1 0 0 / 0.04) 1px, transparent 1px);
     background-size: 56px 56px;
     mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 30%, transparent 80%);
+  }
+  .prose-style p + p {
+    margin-top: 1.25rem;
+  }
+  .prose-style a {
+    color: var(--color-gold);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  .asset-slot {
+    min-height: 132px;
   }
 }

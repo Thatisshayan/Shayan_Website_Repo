@@ -3,11 +3,12 @@
     "title": "Agent Command Center (ACC)",
     "slug": "acc",
     "category": "AI Operating System",
+    "stage": "In development",
     "status": "Pre-production / integration hardening",
-    "summary": "A modular AI operating system that routes goals across agents, tools, approvals, memory, automation, and connected workflows.",
+    "summary": "A modular AI operating system that coordinates goals, tools, approvals, memory, automation, and workflow history in one governed layer.",
     "audience": "Founders, operators, creators, agencies, and teams who want one command center for AI-assisted execution.",
-    "problem": "AI tools are powerful but scattered. ACC creates a governed operating layer where goals, tasks, agents, approvals, memory, and execution history live in one place.",
-    "solution": "ACC acts as an orchestration hub: the user gives a goal, ACC decomposes it into subtasks, routes them to agents or tools, audits outputs, stores results, and returns a final execution report.",
+    "problem": "AI tools are useful but fragmented. ACC brings goals, tasks, approvals, memory, and execution into one operating layer.",
+    "solution": "ACC routes a goal into subtasks, sends work to agents or tools, records outputs, stores results, and returns an execution report.",
     "features": [
       "Task Bus and agent routing",
       "Telegram and dashboard operation",
@@ -16,18 +17,26 @@
       "Memory, snapshots, results, and audit trails",
       "Connector/plugin architecture"
     ],
-    "cta": "Present ACC as the central operating system behind the ecosystem.",
-    "tagline": "AI Operating System for Execution."
+    "businessModel": "Platform / operating system",
+    "cta": "Use ACC as the operating backbone behind the ecosystem.",
+    "ctaLabel": "Open ACC page",
+    "ctaHref": "/acc",
+    "tagline": "AI Operating System for Execution.",
+    "featured": true,
+    "tags": ["AI", "Orchestration", "Approvals", "Memory"],
+    "heroImage": "/social-preview.svg",
+    "ogImage": "/social-preview.svg"
   },
   {
     "title": "Alphonso Ecosystem",
     "slug": "alphonso",
     "category": "Local-first AI Ecosystem",
+    "stage": "In development",
     "status": "Desktop ecosystem / operator-grade build track",
-    "summary": "A cinematic local-first AI ecosystem where specialized agents collaborate inside a premium desktop command environment.",
+    "summary": "A local-first AI ecosystem where specialized agents collaborate inside a desktop command environment.",
     "audience": "Power users, founders, creators, operators, and technical teams who want private local AI workstations.",
-    "problem": "Most AI tools feel temporary, browser-based, and disconnected from local workflows. Alphonso turns AI into a governed desktop ecosystem with identity, memory, approvals, and proof.",
-    "solution": "Alphonso packages agents, workflows, memory, approvals, verification, and local runtime into a shareable desktop ecosystem built around operator-grade UX.",
+    "problem": "Most AI tools are browser-based and disconnected from local workflows. Alphonso keeps identity, memory, approvals, and proof inside one desktop shell.",
+    "solution": "Alphonso packages agents, workflows, memory, approvals, verification, and local runtime into a desktop experience built for operators.",
     "features": [
       "Local-first desktop shell",
       "Jose, Alphonso, Miya, Maria, Marcus agent roles",
@@ -36,18 +45,26 @@
       "Creative studio and workflow dashboards",
       "Installer, updater, and shareable deployment vision"
     ],
-    "cta": "Use Alphonso as the flagship product story for the ecosystem.",
-    "tagline": "A living AI ecosystem for serious operators."
+    "businessModel": "Desktop product",
+    "cta": "Use Alphonso as the flagship desktop product for the ecosystem.",
+    "ctaLabel": "Open Alphonso page",
+    "ctaHref": "/alphonso",
+    "tagline": "A living AI ecosystem for serious operators.",
+    "featured": true,
+    "tags": ["Local-first", "Desktop", "Agents", "Proof"],
+    "heroImage": "/social-preview.svg",
+    "ogImage": "/social-preview.svg"
   },
   {
     "title": "SessionGuard",
     "slug": "sessionguard",
     "category": "Behavior Analytics Platform",
+    "stage": "In development",
     "status": "Product build / V10.1 wiring milestone",
-    "summary": "A session intelligence platform that helps users track, analyze, and improve decision-making patterns through data, reports, and risk insights.",
+    "summary": "A session intelligence platform for tracking, analyzing, and reviewing decision patterns through data, reports, and risk insights.",
     "audience": "Users who want personal analytics, reports, risk tags, and decision pattern review without gambling advice or outcome promises.",
-    "problem": "People often make repeated decisions without clear records, behavior summaries, or pattern visibility.",
-    "solution": "SessionGuard converts uploads or live session data into dashboards, comparisons, alerts, reports, and behavior analytics focused on discipline and awareness.",
+    "problem": "People often repeat decisions without a clear record or pattern visibility.",
+    "solution": "SessionGuard turns uploads or live data into dashboards, comparisons, alerts, and behavior reports focused on discipline and awareness.",
     "features": [
       "CSV upload and session processing",
       "Live capture and WebSocket updates",
@@ -56,18 +73,26 @@
       "PDF exports and visual reports",
       "Desktop proof track planned"
     ],
-    "cta": "Position as a responsible analytics product, not a gaming recommendation tool.",
-    "tagline": "Turn every session into intelligence."
+    "businessModel": "Software / analytics",
+    "cta": "Position SessionGuard as a responsible analytics product, not a recommendation engine.",
+    "ctaLabel": "Open SessionGuard page",
+    "ctaHref": "/sessionguard",
+    "tagline": "Turn every session into intelligence.",
+    "featured": true,
+    "tags": ["Analytics", "Behavior", "Reports", "Risk"],
+    "heroImage": "/social-preview.svg",
+    "ogImage": "/social-preview.svg"
   },
   {
     "title": "TapCash",
     "slug": "tapcash",
     "category": "Rewards Platform",
+    "stage": "Concept",
     "status": "Concept / business planning",
-    "summary": "A GPT-style rewards and offerwall platform concept focused on lean launch, attribution, anti-fraud, and scalable reward operations.",
+    "summary": "A rewards and offerwall platform concept focused on lean launch, attribution, anti-fraud, and scalable operations.",
     "audience": "Consumers looking for rewards, and operators seeking a lean platform with offerwall integrations and fraud controls.",
-    "problem": "Many reward platforms are generic, trust-light, and weak on fraud, attribution, onboarding, and content-led growth.",
-    "solution": "TapCash combines offerwalls, reward workflows, user onboarding, anti-fraud rules, transparent earning paths, and low-cost infrastructure.",
+    "problem": "Many reward platforms are generic and weak on fraud, attribution, onboarding, and growth.",
+    "solution": "TapCash combines offerwalls, reward workflows, onboarding, anti-fraud rules, transparent earning paths, and low-cost infrastructure.",
     "features": [
       "Offerwall integration roadmap",
       "Firebase/Vercel lean stack concept",
@@ -76,18 +101,26 @@
       "Content and growth workflow support",
       "Admin dashboard concept"
     ],
-    "cta": "Use as a future venture page with waitlist capture.",
-    "tagline": "Simple rewards. Smarter growth."
+    "businessModel": "Rewards platform",
+    "cta": "Use this as a future venture page with waitlist capture.",
+    "ctaLabel": "Open TapCash page",
+    "ctaHref": "/tapcash",
+    "tagline": "Simple rewards. Smarter growth.",
+    "featured": false,
+    "tags": ["Rewards", "Offerwall", "Fraud", "Growth"],
+    "heroImage": "/social-preview.svg",
+    "ogImage": "/social-preview.svg"
   },
   {
     "title": "Obsidian Media",
     "slug": "obsidian-media",
     "category": "Media & Content Strategy",
+    "stage": "In development",
     "status": "Business concept / launch package",
-    "summary": "A media and content strategy brand for social campaigns, storytelling systems, YouTube/Instagram workflows, and AI-assisted content operations.",
+    "summary": "A media and content strategy brand for campaigns, storytelling systems, YouTube and Instagram workflows, and AI-assisted content operations.",
     "audience": "Small businesses, creators, founders, and brands needing consistent content and growth systems.",
     "problem": "Most businesses need content but lack repeatable systems for ideas, scripts, production, posting, and repurposing.",
-    "solution": "Obsidian Media offers strategy, campaign planning, content systems, creative direction, and AI-enabled production workflows.",
+    "solution": "Obsidian Media offers strategy, planning, content systems, creative direction, and AI-enabled production workflows.",
     "features": [
       "Content strategy and calendars",
       "Short-form and long-form workflow design",
@@ -96,18 +129,26 @@
       "Repurposing systems",
       "Launch campaign support"
     ],
-    "cta": "Use this as the outward-facing marketing/content services brand.",
-    "tagline": "Content systems for brands that want momentum."
+    "businessModel": "Service business",
+    "cta": "Use this as the outward-facing content services brand.",
+    "ctaLabel": "Open Obsidian Media page",
+    "ctaHref": "/obsidian-media",
+    "tagline": "Content systems for brands that want momentum.",
+    "featured": true,
+    "tags": ["Media", "Content", "Strategy", "Campaigns"],
+    "heroImage": "/social-preview.svg",
+    "ogImage": "/social-preview.svg"
   },
   {
     "title": "Obsidian Studios",
     "slug": "obsidian-studios",
     "category": "Creative Production Studio",
+    "stage": "In development",
     "status": "Business concept / studio services",
     "summary": "A creative studio brand for visuals, trailers, faceless channels, AI cinematics, brand kits, and campaign assets.",
     "audience": "Creators, startups, service businesses, and brands needing premium visuals and production packages.",
     "problem": "Modern brands need high-quality visuals fast, but production can be slow, expensive, and fragmented.",
-    "solution": "Obsidian Studios packages visual production, AI creative pipelines, teaser videos, brand visuals, and reusable creative systems.",
+    "solution": "Obsidian Studios packages visual production, AI creative pipelines, teaser assets, brand visuals, and reusable creative systems.",
     "features": [
       "AI cinematic visuals",
       "Teaser and trailer concepts",
@@ -116,18 +157,26 @@
       "Faceless YouTube visual systems",
       "Creative workflow automation"
     ],
-    "cta": "Use this as the visual production arm connected to Obsidian Media.",
-    "tagline": "Premium creative systems for modern brands."
+    "businessModel": "Service business",
+    "cta": "Use this as the visual production arm of the media brand.",
+    "ctaLabel": "Open Obsidian Studios page",
+    "ctaHref": "/obsidian-studios",
+    "tagline": "Premium creative systems for modern brands.",
+    "featured": true,
+    "tags": ["Creative", "Visuals", "Campaigns", "Studio"],
+    "heroImage": "/social-preview.svg",
+    "ogImage": "/social-preview.svg"
   },
   {
     "title": "Blazely",
     "slug": "blazely",
     "category": "Marketing Automation Venture",
+    "stage": "Concept",
     "status": "Concept / workflow design",
-    "summary": "A commission-based marketing and landing-page system for lead generation, business growth, and automated campaign workflows.",
+    "summary": "A commission-based marketing and landing-page system for lead generation, business growth, and automated workflows.",
     "audience": "Local businesses and service providers that want low-friction marketing execution and lead generation.",
     "problem": "Small businesses often avoid marketing because upfront costs feel risky and results are hard to track.",
-    "solution": "Blazely can offer performance-aligned marketing packages, landing pages, lead flows, automation, and campaign tracking.",
+    "solution": "Blazely can offer performance-aligned marketing packages, landing pages, lead flows, automation, and tracking.",
     "features": [
       "Landing page creation",
       "Lead capture workflows",
@@ -136,13 +185,21 @@
       "Performance reporting",
       "Upsells for SEO/copy/maintenance"
     ],
-    "cta": "Position as a practical revenue-generating service business.",
-    "tagline": "Launch faster. Capture leads. Grow smarter."
+    "businessModel": "Service / performance marketing",
+    "cta": "Use this as a practical revenue-oriented service brand.",
+    "ctaLabel": "Open Blazely page",
+    "ctaHref": "/blazely",
+    "tagline": "Launch faster. Capture leads. Grow smarter.",
+    "featured": false,
+    "tags": ["Marketing", "Automation", "Leads", "Growth"],
+    "heroImage": "/social-preview.svg",
+    "ogImage": "/social-preview.svg"
   },
   {
     "title": "Founder Project",
     "slug": "founder-project",
     "category": "AI Company-in-a-Box",
+    "stage": "Concept",
     "status": "Strategic concept / productization track",
     "summary": "A systemized AI company-in-a-box concept that helps founders move from idea to offer, operations, content, automations, and launch assets.",
     "audience": "Solo founders, early-stage entrepreneurs, creators, agencies, and operators starting new digital ventures.",
@@ -156,18 +213,26 @@
       "Operating workflows",
       "Agent-based execution plans"
     ],
-    "cta": "Use as a packaged product or paid starter system.",
-    "tagline": "From idea to operating company system."
+    "businessModel": "Productized service",
+    "cta": "Use this as a packaged product or starter system.",
+    "ctaLabel": "Open Founder Project page",
+    "ctaHref": "/founder-project",
+    "tagline": "From idea to operating company system.",
+    "featured": false,
+    "tags": ["Founders", "Startup", "Templates", "Launch"],
+    "heroImage": "/social-preview.svg",
+    "ogImage": "/social-preview.svg"
   },
   {
     "title": "Cullinan Construction",
     "slug": "cullinan-construction",
     "category": "Construction Services",
+    "stage": "Live / active",
     "status": "Operating / service business",
-    "summary": "A general contracting and construction services brand for renovations, new builds, landscaping, project management, and high-quality execution in Ontario.",
+    "summary": "A general contracting and construction services brand for renovations, new builds, landscaping, project management, and quality execution in Ontario.",
     "audience": "Homeowners, property owners, investors, and developers in Ontario seeking trustworthy construction execution.",
-    "problem": "Clients need reliable planning, coordination, trade management, pricing clarity, and clean execution across construction projects.",
-    "solution": "Cullinan Construction can present renovation, landscaping, concrete, interlock, custom build, and project management services in a professional service website.",
+    "problem": "Clients need reliable planning, coordination, pricing clarity, and execution across construction projects.",
+    "solution": "Cullinan Construction can present renovation, landscaping, concrete, interlock, custom build, and project management services on a focused service site.",
     "features": [
       "Residential renovations",
       "Custom home support",
@@ -176,18 +241,26 @@
       "Project coordination",
       "Quote and consultation funnel"
     ],
-    "cta": "Keep this as a separate business page or sub-brand with its own service funnel.",
-    "tagline": "Construction execution with clarity and control."
+    "businessModel": "Local business / professional service",
+    "cta": "Keep this as a separate service brand with its own funnel.",
+    "ctaLabel": "Open Cullinan Construction page",
+    "ctaHref": "/cullinan-construction",
+    "tagline": "Construction execution with clarity and control.",
+    "featured": true,
+    "tags": ["Construction", "Renovation", "Project Management", "Ontario"],
+    "heroImage": "/social-preview.svg",
+    "ogImage": "/social-preview.svg"
   },
   {
     "title": "AI Tourist Assistant Platform",
     "slug": "ai-tourist-assistant",
     "category": "Travel / Event Opportunity",
+    "stage": "Opportunity",
     "status": "Opportunity concept",
-    "summary": "A tourist assistant concept for major events such as the FIFA World Cup in Canada, helping visitors navigate local services, food, transport, events, and emergency information.",
+    "summary": "A tourist assistant concept for major events such as the FIFA World Cup in Canada, helping visitors navigate local services, food, transit, events, and emergency information.",
     "audience": "Tourists, visitors, hotels, local businesses, event organizers, and destination marketers.",
     "problem": "Visitors need local guidance that is fast, multilingual, location-aware, and useful during high-traffic events.",
-    "solution": "A web/mobile assistant can guide visitors through attractions, transportation, restaurants, emergency info, itineraries, and business offers.",
+    "solution": "A web or mobile assistant can guide visitors through attractions, transit, restaurants, emergency info, itineraries, and business offers.",
     "features": [
       "Multilingual visitor assistant",
       "City guides and itineraries",
@@ -196,18 +269,26 @@
       "Emergency and safety info",
       "Sponsor/affiliate placement opportunities"
     ],
-    "cta": "Use as an opportunity page or future product waitlist.",
-    "tagline": "A smarter local guide for major-event visitors."
+    "businessModel": "Opportunity / sponsored platform",
+    "cta": "Use this as an opportunity page or future waitlist.",
+    "ctaLabel": "Open opportunity page",
+    "ctaHref": "/ai-tourist-assistant",
+    "tagline": "A smarter local guide for major-event visitors.",
+    "featured": false,
+    "tags": ["Tourism", "Events", "Multilingual", "Sponsors"],
+    "heroImage": "/social-preview.svg",
+    "ogImage": "/social-preview.svg"
   },
   {
     "title": "UniUni DSP Opportunity",
     "slug": "uniuni-dsp-opportunity",
     "category": "Logistics Business Opportunity",
+    "stage": "Opportunity",
     "status": "Research / evaluation",
-    "summary": "A delivery service partner opportunity page for evaluating startup requirements, capital needs, operating model, vehicles, hiring, insurance, and profitability.",
+    "summary": "A delivery service partner opportunity page for evaluating requirements, capital needs, operating model, vehicles, hiring, insurance, and profitability.",
     "audience": "Entrepreneurs exploring courier, last-mile delivery, fleet, and logistics opportunities.",
     "problem": "DSP opportunities can look simple but require clear understanding of vehicles, insurance, dispatch, recruiting, compliance, margins, and service standards.",
-    "solution": "This page can organize research, requirements, comparison opportunities, startup checklist, and next steps before committing capital.",
+    "solution": "This page can organize research, requirements, comparison opportunities, startup checklist, and next steps before capital is committed.",
     "features": [
       "Requirements checklist",
       "Startup cost model",
@@ -216,7 +297,14 @@
       "Competitor opportunity comparison",
       "Decision scorecard"
     ],
-    "cta": "Use as a research-backed business evaluation page.",
-    "tagline": "Evaluate the logistics opportunity before you commit."
+    "businessModel": "Opportunity / logistics operations",
+    "cta": "Use this as a research-backed business evaluation page.",
+    "ctaLabel": "Open opportunity page",
+    "ctaHref": "/uniuni-dsp-opportunity",
+    "tagline": "Evaluate the logistics opportunity before you commit.",
+    "featured": false,
+    "tags": ["Logistics", "DSP", "Fleet", "Research"],
+    "heroImage": "/social-preview.svg",
+    "ogImage": "/social-preview.svg"
   }
 ]

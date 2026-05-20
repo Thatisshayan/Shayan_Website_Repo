@@ -1,0 +1,39 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="40" x2="1080" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B0B16"/>
+      <stop offset="0.5" stop-color="#111A33"/>
+      <stop offset="1" stop-color="#1B1031"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280 150) rotate(90) scale(280 320)">
+      <stop stop-color="#8BD3FF" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#8BD3FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 180) rotate(90) scale(260 300)">
+      <stop stop-color="#D8B4FE" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#D8B4FE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" rx="48" fill="url(#bg)"/>
+  <rect width="1200" height="630" rx="48" fill="url(#glow1)"/>
+  <rect width="1200" height="630" rx="48" fill="url(#glow2)"/>
+  <g opacity="0.16">
+    <path d="M0 120H1200" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0 240H1200" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0 360H1200" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0 480H1200" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M180 0V630" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M360 0V630" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M540 0V630" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M720 0V630" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M900 0V630" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M1080 0V630" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+  <circle cx="182" cy="152" r="54" fill="#F5D38B"/>
+  <path d="M162 123H202V183H162V123Z" fill="#0B0B16"/>
+  <text x="180" y="156" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#0B0B16">S</text>
+  <text x="260" y="165" fill="#F7F8FB" font-family="Space Grotesk, Inter, Arial, sans-serif" font-size="40" font-weight="700">Shayan Venture Ecosystem</text>
+  <text x="260" y="228" fill="#AEB7C8" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="500">A founder-led ecosystem of AI products, service brands, and operating systems.</text>
+  <text x="260" y="328" fill="#8BD3FF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">FOUNDERS  |  OPERATORS  |  INVESTORS  |  CLIENTS</text>
+  <text x="260" y="402" fill="#F7F8FB" font-family="Space Grotesk, Inter, Arial, sans-serif" font-size="30" font-weight="600">Production-ready foundation for every project.</text>
+</svg>

@@ -1,34 +1,49 @@
 # Website QA Checklist
 
 ## Content
-- [ ] Every project has a page
+
+- [ ] Every required page exists
+- [ ] Every project has a dedicated page
+- [ ] Status labels are clear: Live / active, In development, Concept, Opportunity
 - [ ] No placeholder email remains
 - [ ] No placeholder phone remains
-- [ ] Legal pages reviewed
-- [ ] Contact form works
-- [ ] CTAs are clear
-- [ ] Spelling checked
+- [ ] No placeholder copy remains in public-facing headings
+- [ ] Project CTAs are specific and honest
 
 ## Design
-- [ ] Desktop layout clean
-- [ ] Tablet layout clean
-- [ ] Mobile layout clean
-- [ ] Contrast readable
-- [ ] Buttons visible
-- [ ] Images optimized
+
+- [ ] Desktop layout is clean
+- [ ] Tablet layout is clean
+- [ ] Mobile layout is clean
+- [ ] Mobile navigation opens and closes correctly
+- [ ] Contrast is readable
+- [ ] Buttons are clearly visible
+- [ ] Placeholder asset slots are understandable
 
 ## SEO
+
 - [ ] Unique title per page
 - [ ] Unique meta description per page
+- [ ] Canonical URL on every page
 - [ ] Open Graph image added
-- [ ] Sitemap generated
-- [ ] Robots.txt added
-- [ ] Google Search Console connected
+- [ ] Twitter/X metadata added
+- [ ] Sitemap generated from the live base URL
+- [ ] Robots file points to the live sitemap
+
+## Contact Form
+
+- [ ] Validation works
+- [ ] Honeypot field is hidden
+- [ ] Loading state works
+- [ ] Success state is honest
+- [ ] Error state is honest
+- [ ] Real provider is connected before launch
 
 ## Technical
+
 - [ ] All links work
-- [ ] Form backend connected
-- [ ] Analytics installed
-- [ ] Domain connected
-- [ ] SSL active
-- [ ] Page speed checked
+- [ ] Project route pages resolve
+- [ ] JSON-LD renders without errors
+- [ ] Production build succeeds
+- [ ] Local preview works over HTTP
+- [ ] Environment variables are documented

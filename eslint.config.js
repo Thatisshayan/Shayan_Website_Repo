@@ -6,7 +6,17 @@ import reactRefresh from "eslint-plugin-react-refresh";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
-  { ignores: ["dist", ".output", ".vinxi"] },
+  {
+    ignores: [
+      "dist",
+      ".output",
+      ".vinxi",
+      "Footer (1).tsx",
+      "Footer (2).tsx",
+      "Footer (3).tsx",
+      "Shayan_Complete_Website_Package/**",
+    ],
+  },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ["**/*.{ts,tsx}"],
@@ -34,6 +44,12 @@ export default tseslint.config(
       ],
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
       "@typescript-eslint/no-unused-vars": "off",
+    },
+  },
+  {
+    files: ["src/components/ui/{badge,button,form,navigation-menu,sidebar,toggle}.tsx"],
+    rules: {
+      "react-refresh/only-export-components": "off",
     },
   },
   eslintPluginPrettier,
