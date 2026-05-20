@@ -1,0 +1,222 @@
+[
+  {
+    "title": "Agent Command Center (ACC)",
+    "slug": "acc",
+    "category": "AI Operating System",
+    "status": "Pre-production / integration hardening",
+    "summary": "A modular AI operating system that routes goals across agents, tools, approvals, memory, automation, and connected workflows.",
+    "audience": "Founders, operators, creators, agencies, and teams who want one command center for AI-assisted execution.",
+    "problem": "AI tools are powerful but scattered. ACC creates a governed operating layer where goals, tasks, agents, approvals, memory, and execution history live in one place.",
+    "solution": "ACC acts as an orchestration hub: the user gives a goal, ACC decomposes it into subtasks, routes them to agents or tools, audits outputs, stores results, and returns a final execution report.",
+    "features": [
+      "Task Bus and agent routing",
+      "Telegram and dashboard operation",
+      "Approval gates for risky actions",
+      "Provider fallback: low-cost AI first, premium when needed",
+      "Memory, snapshots, results, and audit trails",
+      "Connector/plugin architecture"
+    ],
+    "cta": "Present ACC as the central operating system behind the ecosystem.",
+    "tagline": "AI Operating System for Execution."
+  },
+  {
+    "title": "Alphonso Ecosystem",
+    "slug": "alphonso",
+    "category": "Local-first AI Ecosystem",
+    "status": "Desktop ecosystem / operator-grade build track",
+    "summary": "A cinematic local-first AI ecosystem where specialized agents collaborate inside a premium desktop command environment.",
+    "audience": "Power users, founders, creators, operators, and technical teams who want private local AI workstations.",
+    "problem": "Most AI tools feel temporary, browser-based, and disconnected from local workflows. Alphonso turns AI into a governed desktop ecosystem with identity, memory, approvals, and proof.",
+    "solution": "Alphonso packages agents, workflows, memory, approvals, verification, and local runtime into a shareable desktop ecosystem built around operator-grade UX.",
+    "features": [
+      "Local-first desktop shell",
+      "Jose, Alphonso, Miya, Maria, Marcus agent roles",
+      "Approval Center and proof receipts",
+      "Memory confidence system",
+      "Creative studio and workflow dashboards",
+      "Installer, updater, and shareable deployment vision"
+    ],
+    "cta": "Use Alphonso as the flagship product story for the ecosystem.",
+    "tagline": "A living AI ecosystem for serious operators."
+  },
+  {
+    "title": "SessionGuard",
+    "slug": "sessionguard",
+    "category": "Behavior Analytics Platform",
+    "status": "Product build / V10.1 wiring milestone",
+    "summary": "A session intelligence platform that helps users track, analyze, and improve decision-making patterns through data, reports, and risk insights.",
+    "audience": "Users who want personal analytics, reports, risk tags, and decision pattern review without gambling advice or outcome promises.",
+    "problem": "People often make repeated decisions without clear records, behavior summaries, or pattern visibility.",
+    "solution": "SessionGuard converts uploads or live session data into dashboards, comparisons, alerts, reports, and behavior analytics focused on discipline and awareness.",
+    "features": [
+      "CSV upload and session processing",
+      "Live capture and WebSocket updates",
+      "Comparison reports and trend analysis",
+      "Risk scoring and behavior tags",
+      "PDF exports and visual reports",
+      "Desktop proof track planned"
+    ],
+    "cta": "Position as a responsible analytics product, not a gaming recommendation tool.",
+    "tagline": "Turn every session into intelligence."
+  },
+  {
+    "title": "TapCash",
+    "slug": "tapcash",
+    "category": "Rewards Platform",
+    "status": "Concept / business planning",
+    "summary": "A GPT-style rewards and offerwall platform concept focused on lean launch, attribution, anti-fraud, and scalable reward operations.",
+    "audience": "Consumers looking for rewards, and operators seeking a lean platform with offerwall integrations and fraud controls.",
+    "problem": "Many reward platforms are generic, trust-light, and weak on fraud, attribution, onboarding, and content-led growth.",
+    "solution": "TapCash combines offerwalls, reward workflows, user onboarding, anti-fraud rules, transparent earning paths, and low-cost infrastructure.",
+    "features": [
+      "Offerwall integration roadmap",
+      "Firebase/Vercel lean stack concept",
+      "Anti-fraud and attribution planning",
+      "Reward ledger and user account flows",
+      "Content and growth workflow support",
+      "Admin dashboard concept"
+    ],
+    "cta": "Use as a future venture page with waitlist capture.",
+    "tagline": "Simple rewards. Smarter growth."
+  },
+  {
+    "title": "Obsidian Media",
+    "slug": "obsidian-media",
+    "category": "Media & Content Strategy",
+    "status": "Business concept / launch package",
+    "summary": "A media and content strategy brand for social campaigns, storytelling systems, YouTube/Instagram workflows, and AI-assisted content operations.",
+    "audience": "Small businesses, creators, founders, and brands needing consistent content and growth systems.",
+    "problem": "Most businesses need content but lack repeatable systems for ideas, scripts, production, posting, and repurposing.",
+    "solution": "Obsidian Media offers strategy, campaign planning, content systems, creative direction, and AI-enabled production workflows.",
+    "features": [
+      "Content strategy and calendars",
+      "Short-form and long-form workflow design",
+      "Brand storytelling packages",
+      "AI-assisted script and creative planning",
+      "Repurposing systems",
+      "Launch campaign support"
+    ],
+    "cta": "Use this as the outward-facing marketing/content services brand.",
+    "tagline": "Content systems for brands that want momentum."
+  },
+  {
+    "title": "Obsidian Studios",
+    "slug": "obsidian-studios",
+    "category": "Creative Production Studio",
+    "status": "Business concept / studio services",
+    "summary": "A creative studio brand for visuals, trailers, faceless channels, AI cinematics, brand kits, and campaign assets.",
+    "audience": "Creators, startups, service businesses, and brands needing premium visuals and production packages.",
+    "problem": "Modern brands need high-quality visuals fast, but production can be slow, expensive, and fragmented.",
+    "solution": "Obsidian Studios packages visual production, AI creative pipelines, teaser videos, brand visuals, and reusable creative systems.",
+    "features": [
+      "AI cinematic visuals",
+      "Teaser and trailer concepts",
+      "Brand kit production",
+      "Social assets and campaign packs",
+      "Faceless YouTube visual systems",
+      "Creative workflow automation"
+    ],
+    "cta": "Use this as the visual production arm connected to Obsidian Media.",
+    "tagline": "Premium creative systems for modern brands."
+  },
+  {
+    "title": "Blazely",
+    "slug": "blazely",
+    "category": "Marketing Automation Venture",
+    "status": "Concept / workflow design",
+    "summary": "A commission-based marketing and landing-page system for lead generation, business growth, and automated campaign workflows.",
+    "audience": "Local businesses and service providers that want low-friction marketing execution and lead generation.",
+    "problem": "Small businesses often avoid marketing because upfront costs feel risky and results are hard to track.",
+    "solution": "Blazely can offer performance-aligned marketing packages, landing pages, lead flows, automation, and campaign tracking.",
+    "features": [
+      "Landing page creation",
+      "Lead capture workflows",
+      "CRM/lead table setup",
+      "Campaign automation",
+      "Performance reporting",
+      "Upsells for SEO/copy/maintenance"
+    ],
+    "cta": "Position as a practical revenue-generating service business.",
+    "tagline": "Launch faster. Capture leads. Grow smarter."
+  },
+  {
+    "title": "Founder Project",
+    "slug": "founder-project",
+    "category": "AI Company-in-a-Box",
+    "status": "Strategic concept / productization track",
+    "summary": "A systemized AI company-in-a-box concept that helps founders move from idea to offer, operations, content, automations, and launch assets.",
+    "audience": "Solo founders, early-stage entrepreneurs, creators, agencies, and operators starting new digital ventures.",
+    "problem": "Founders waste time moving between research, branding, offers, operations, build tools, content, and launch planning.",
+    "solution": "Founder Project turns startup creation into guided workflows, templates, agent teams, checklists, and launch-ready systems.",
+    "features": [
+      "Idea validation workflows",
+      "Business model templates",
+      "Brand and offer creation",
+      "Website and launch asset generation",
+      "Operating workflows",
+      "Agent-based execution plans"
+    ],
+    "cta": "Use as a packaged product or paid starter system.",
+    "tagline": "From idea to operating company system."
+  },
+  {
+    "title": "Cullinan Construction",
+    "slug": "cullinan-construction",
+    "category": "Construction Services",
+    "status": "Operating / service business",
+    "summary": "A general contracting and construction services brand for renovations, new builds, landscaping, project management, and high-quality execution in Ontario.",
+    "audience": "Homeowners, property owners, investors, and developers in Ontario seeking trustworthy construction execution.",
+    "problem": "Clients need reliable planning, coordination, trade management, pricing clarity, and clean execution across construction projects.",
+    "solution": "Cullinan Construction can present renovation, landscaping, concrete, interlock, custom build, and project management services in a professional service website.",
+    "features": [
+      "Residential renovations",
+      "Custom home support",
+      "Landscaping and interlock",
+      "Concrete and exterior work",
+      "Project coordination",
+      "Quote and consultation funnel"
+    ],
+    "cta": "Keep this as a separate business page or sub-brand with its own service funnel.",
+    "tagline": "Construction execution with clarity and control."
+  },
+  {
+    "title": "AI Tourist Assistant Platform",
+    "slug": "ai-tourist-assistant",
+    "category": "Travel / Event Opportunity",
+    "status": "Opportunity concept",
+    "summary": "A tourist assistant concept for major events such as the FIFA World Cup in Canada, helping visitors navigate local services, food, transport, events, and emergency information.",
+    "audience": "Tourists, visitors, hotels, local businesses, event organizers, and destination marketers.",
+    "problem": "Visitors need local guidance that is fast, multilingual, location-aware, and useful during high-traffic events.",
+    "solution": "A web/mobile assistant can guide visitors through attractions, transportation, restaurants, emergency info, itineraries, and business offers.",
+    "features": [
+      "Multilingual visitor assistant",
+      "City guides and itineraries",
+      "Local business listings",
+      "Event and transit help",
+      "Emergency and safety info",
+      "Sponsor/affiliate placement opportunities"
+    ],
+    "cta": "Use as an opportunity page or future product waitlist.",
+    "tagline": "A smarter local guide for major-event visitors."
+  },
+  {
+    "title": "UniUni DSP Opportunity",
+    "slug": "uniuni-dsp-opportunity",
+    "category": "Logistics Business Opportunity",
+    "status": "Research / evaluation",
+    "summary": "A delivery service partner opportunity page for evaluating startup requirements, capital needs, operating model, vehicles, hiring, insurance, and profitability.",
+    "audience": "Entrepreneurs exploring courier, last-mile delivery, fleet, and logistics opportunities.",
+    "problem": "DSP opportunities can look simple but require clear understanding of vehicles, insurance, dispatch, recruiting, compliance, margins, and service standards.",
+    "solution": "This page can organize research, requirements, comparison opportunities, startup checklist, and next steps before committing capital.",
+    "features": [
+      "Requirements checklist",
+      "Startup cost model",
+      "Fleet and staffing plan",
+      "Insurance/compliance checklist",
+      "Competitor opportunity comparison",
+      "Decision scorecard"
+    ],
+    "cta": "Use as a research-backed business evaluation page.",
+    "tagline": "Evaluate the logistics opportunity before you commit."
+  }
+]
